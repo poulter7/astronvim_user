@@ -15,10 +15,5 @@ return {
           }),
         },
       })
-      vim.cmd [[
-        map <leader>Tt :lua require("neotest").run.run()<CR>
-        map <leader>TT :lua require("neotest").run.run(vim.fn.expand("%"))<CR>
-        map <Space>t :lua lua require("neotest").output_panel.open({ enter = true })
-      ]]
     end
 }
