@@ -27,9 +27,20 @@ return {
       end,
       desc = "Pick to close",
     },
+    ["<leader>Tt"] = {function() require("neotest").run.run() end, desc = "Run nearest test"},
+    ["<leader>TT"] = {function() require("neotest").run.run({strategy = 'dap'}) end, desc = "Debug nearest test"},
+    ["<leader>Tf"] = {function() require('neotest').run.run(vim.fn.expand('%')) end, desc = "Run File"},
+    ["<leader>TF"] = {function() require('neotest').run.run({vim.fn.expand('%'), strategy = 'dap'}) end, desc = "Debug File"},
+    ["<leader>Tl"] = {function() require('neotest').run.run_last() end, desc = "Run Last"},
+    ["<leader>TL"] = {function() require('neotest').run.run_last({ strategy = 'dap' }) end, desc = "Debug Last"},
+    ["<leader>To"] = {function() require('neotest').output.open({ enter = true }) end, desc = "Show Output"},
+    ["<leader>TS"] = {function() require('neotest').run.stop() end, desc = "Stop"},
+    ["<leader>Ts"] = {function() require('neotest').summary.toggle() end, desc = "Summary"},
+
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
+    ["<leader>T"] = { name = "NeoTest" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
