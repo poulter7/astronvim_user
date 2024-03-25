@@ -11,7 +11,13 @@ return {
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
   { import = "astrocommunity.scrolling.nvim-scrollbar" },
-  -- { import = "astrocommunity.lsp.inc-rename-nvim" },
-
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.colorscheme.kanagawa-nvim", enabled=true},
+  { import = "astrocommunity.completion.copilot-lua" },
+  {
+    "zbirenbaum/copilot.lua",
+    opts = {
+      suggestion = { enabled = true, auto_trigger = true, keymap = {accept = "<C-l>"}},
+      panel = { enabled = false}
+    }
+  }
 }
