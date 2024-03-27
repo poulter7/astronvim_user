@@ -13,6 +13,7 @@ return {
   { import = "astrocommunity.scrolling.nvim-scrollbar" },
   { import = "astrocommunity.colorscheme.kanagawa-nvim", enabled=true},
   { import = "astrocommunity.completion.copilot-lua" },
+  { import = "astrocommunity.note-taking.neorg" },
   {
     "zbirenbaum/copilot.lua",
     opts = {
