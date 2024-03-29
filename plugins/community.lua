@@ -15,6 +15,7 @@ return {
   { import = "astrocommunity.completion.copilot-lua" },
   { import = "astrocommunity.note-taking.neorg" },
   { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.git.neogit" },
   {
     "zbirenbaum/copilot.lua",
     opts = {
