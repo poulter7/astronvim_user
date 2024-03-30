@@ -31,11 +31,11 @@ return {
             runtimes = {
               {
                 name = "JavaSE-17",
-                path = "/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk",
+                path = "/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home/bin/",
               },
               {
                 name = "JavaSE-21",
-                path = "/opt/homebrew/opt/openjdk/libexec/openjdk.jdk",
+                path = "/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home/bin/",
               }
             },
           },
