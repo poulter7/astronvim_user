@@ -22,6 +22,23 @@ return {
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.java" },
+  {
+    "mfussenegger/nvim-jdtls",
+    opts = {
+      settings = {
+        java = {
+          configuration = {
+            runtimes = {
+              {
+                name = "JavaSE-17",
+                path = "/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk",
+              },
+            },
+          },
+        },
+      },
+    },
+  },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.julia" },
   { import = "astrocommunity.pack.toml" },
