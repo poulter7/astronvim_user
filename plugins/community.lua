@@ -23,6 +23,36 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.java" },
   {
+      "smoka7/hop.nvim",
+      opts = {},
+      keys = {
+        {
+          "f",
+          function() require("hop").hint_words() end,
+          mode = { "n" },
+          desc = "Hop hint words",
+        },
+        {
+          "<S-f>",
+          function() require("hop").hint_lines() end,
+          mode = { "n" },
+          desc = "Hop hint lines",
+        },
+        {
+          "f",
+          function() require("hop").hint_words { extend_visual = true } end,
+          mode = { "v" },
+          desc = "Hop hint words",
+        },
+        {
+          "<S-f>",
+          function() require("hop").hint_lines { extend_visual = true } end,
+          mode = { "v" },
+          desc = "Hop hint lines",
+        },
+      },
+    },
+  {
     "mfussenegger/nvim-jdtls",
     opts = {
       settings = {
