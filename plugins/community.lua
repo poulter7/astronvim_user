@@ -14,9 +14,17 @@ return {
   { import = "astrocommunity.colorscheme.kanagawa-nvim", enabled=true},
   { import = "astrocommunity.completion.copilot-lua" },
   { import = "astrocommunity.note-taking.neorg" },
-  { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.project.projectmgr-nvim" },
+  { import = "astrocommunity.project.nvim-spectre" },
   { import = "astrocommunity.git.neogit" },
+  { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.java" },
+  { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.julia" },
+  { import = "astrocommunity.pack.toml" },
+
   {
     "zbirenbaum/copilot.lua",
     opts = {
