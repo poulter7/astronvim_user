@@ -16,6 +16,7 @@ return {
   { import = "astrocommunity.note-taking.neorg" },
   { import = "astrocommunity.project.projectmgr-nvim" },
   { import = "astrocommunity.project.nvim-spectre" },
+  { import = "astrocommunity.code-runner.compiler-nvim" },
   { import = "astrocommunity.git.neogit" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.docker" },
