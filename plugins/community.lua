@@ -22,6 +22,7 @@ return {
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.java" },
+  { import = "astrocommunity.utility.mason-tool-installer-nvim"},
   {
       "smoka7/hop.nvim",
       opts = {},
